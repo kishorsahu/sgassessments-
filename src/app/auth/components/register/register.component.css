@@ -1,0 +1,40 @@
+.sg-ass-form {
+	width: 800px;
+	margin: 0 auto;
+
+}
+
+h3 {
+	text-align: center;
+}
+.registerForm {
+	width: 100%;
+}
+.form-group {
+	width: 100%;
+	margin: 20px;
+
+}
+.form-group input {
+	width: 100%;
+	padding: 10px;
+	border: 1px soldi #ccc;
+	margin: 10px 0;
+}
+.form-group select {
+	width: 100%;
+	padding: 10px;
+	border: 1px soldi #ccc;
+	margin: 10px 0;
+}
+
+.form-group button {
+	font-size: 16px;
+	padding: 10px 20px;
+	margin-right: 20px;
+}
+
+.form-group .invalid-feedback {
+	color: red;
+	font-size: 12px;
+}

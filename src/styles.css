@@ -1,0 +1,39 @@
+body {
+	font-family: arial;
+	font-size: 16px;
+}
+h2 {
+	font-size: 32px;
+	text-align: center;
+}
+
+ngx-datatable {
+font-family:  
+}
+ngx-datatable {
+	
+}
+datatable-header {
+	background: #2497a9;
+	color: #fff;
+	padding: 10px 20px;
+}
+datatable-body-cell {
+	padding: 5px 20px;
+	border-bottom: 1px solid #ccc;
+}
+datatable-footer {
+	margin-top: 20px;
+}
+.ngx-datatable .datatable-footer .datatable-pager .pager li a {
+	color: #565252;
+	text-decoration: none;
+	font-size: 18px;
+	padding: 5px;
+}
+.ngx-datatable .datatable-footer .datatable-pager .pager li a:hover{
+	text-decoration: underline;
+}
+.ngx-datatable .datatable-footer .datatable-pager .pager li.active {
+	font-weight: bold;
+}

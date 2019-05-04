@@ -1,0 +1,56 @@
+<!-- main app container -->
+<div class="sg-ass-form">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+
+				<h3>Employee Registration</h3>
+				<form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="registerForm">
+					<div class="form-group">
+						<label>First Name</label>
+						<input type="text" formControlName="firstName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" />
+						<div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+							<div *ngIf="f.firstName.errors.required">First Name is required</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label>Last Name</label>
+						<input type="text" formControlName="lastName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" />
+						<div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+							<div *ngIf="f.lastName.errors.required">Last Name is required</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label>Gender</label>
+						<select id="gender" formControlName="gender">
+							<option value="male"> Male</option>
+							<option value="female">Female</option>
+							<option value="other">Other</option>
+						</select>
+
+					</div>
+
+					<div class="form-group">
+						<label>Department</label>
+						<input id="dateControl" type="date" formControlName="dob" clrDate (clrDateChange)="dateObject" />
+					</div>
+					<div class="form-group">
+						<label>Department</label>
+						<select id="department" formControlName="department">
+							<option value="departA"> Department A</option>
+							<option value="departB"> Department B</option>
+							<option value="departC"> Department C</option>
+							<option value="departD"> Department D</option>
+						</select>
+
+					</div>
+					
+					<div class="form-group">
+						<button class="btn btn-primary">Register</button>
+						<button class="btn btn-primary" (click)="backeTouserList()">Users</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

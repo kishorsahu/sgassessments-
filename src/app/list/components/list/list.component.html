@@ -1,0 +1,22 @@
+<div class="list">
+   <h2> Employee List</h2>
+   <ngx-datatable
+   class="material"
+   [rows]="rows"
+   [columns]="[
+   {name:'Id',prop:'id' },
+   {name:'First Name', prop:'firstName'},
+   {name:'Last Name',prop:'lastName'},
+   {name:'Gender',prop:'gender'},
+   {name:'Date Of Birth',prop:'dob'},
+   {name:'Department',prop:'department'}
+   ]"
+   [columnMode]="'force'"
+   [headerHeight]="50"
+   [footerHeight]="50"
+   [rowHeight]="'auto'"
+   [limit]="10">
+       
+   </ngx-datatable>
+   <button class="btn btn-primary" (click)="gotoRegister()">Register New User</button>
+</div>
